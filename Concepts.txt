@@ -1,0 +1,31 @@
+Question: Why Dimensionality Reduction?
+Answer:   In machine learning classification problems, there are often too many factors on the basis of which the final classification is done.
+          These factors are basically variables called features. 
+          The higher the number of features, the harder it gets to visualize the training set and then work on it.
+
+Question: What is Dimensionality Reduction?
+Answer:   Sometimes, most of these features are correlated, and hence redundant. 
+          This is where dimensionality reduction algorithms come into play. 
+          Dimensionality reduction is the process of reducing the number of random variables under consideration, by obtaining a set of principal variables. 
+          It can be divided into feature selection and feature extraction.
+          
+Question: What is PCA?
+Answer:   PCA-Principal Component Analysis
+          PCA converts correlated features into orthogonal features.
+          Each feature gives unique information about data. No two features doesn't have any common information about data (σxy=σyx=0).
+          There are so many advantages of using orthogonal features over correlated features,some of them are:-
+          (1) We can visualize the complex data set in lower dimensional space (Biplot)
+          (2) We can eliminate the redundant features. So, we can reduce the original feature space to lower dimensional space which greatly reduce the computational resources.
+          (3) We can use it as feature selection technique.
+          
+Question : What is LDA?
+Answer:    LDA-Linear Discriminant Analysis
+           LDA explicitly attempts to model the difference between the classes of data.
+           LDA works when the measurements made on independent variables for each observation are continuous quantities.
+           
+Question : What is the difference between LDA and PCA?
+Answer:   Both LDA and PCA are linear transformation techniques.
+          LDA is a supervised whereas PCA is unsupervised.
+          PCA ignores class labels.
+          We can picture PCA as a technique that finds the directions of maximal variance.
+          In contrast to PCA, LDA attempts to find a feature subspace that maximizes class separability
